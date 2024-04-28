@@ -12,24 +12,34 @@
   <body>
     <div class="weather-app">
       <header>
-        <form>
-          <input type="search" placeholder="Enter a city" />
-          <input type="submit" value="Search" />
+        <form class="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city"
+            class="search-input1"
+          />
+          <input type="submit" value="Search" class="search-input2" />
         </form>
       </header>
 
       <main>
-        <div>
-          <h1>Paris</h1>
-          <p>
-            Sunday 16:22, scattered clouds <br />
-            Humidity: 66%, Wind: 3.13km/h
-          </p>
+        <div class="weather-data">
+          <div>
+            <h1 class="weather-city">Paris</h1>
+            <p class="weather-content">
+              Sunday 16:22, scattered clouds <br />
+              Humidity: <strong>66%</strong>, Wind: <strong>3.13km/h</strong>
+            </p>
+          </div>
+          <div class="weather-temp">
+            <span class="temp-emoji">⛅ </span>
+            <span class="temp-detail">12 </span>
+            <span class="temp-unit">°C</span>
+          </div>
         </div>
-        <div>⛅ 12 °C</div>
       </main>
       <footer>
-        Coded by
+        This project was coded by
         <a href="https://github.com/Bernadettechukwuedo" target="_blank"
           >Bernadette Chukwuedo</a
         >, is

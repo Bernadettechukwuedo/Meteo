@@ -5,9 +5,11 @@ function updatetemp(response) {
     let humid = document.querySelector(".humid");
     let windSpeed = document.querySelector(".speed");
     let dateTime = document.querySelector(".date");
+    let icon = document.querySelector(".icon");
     let date = new Date(response.data.time * 1000);
     let output1 = response.data.temperature.humidity;
     let output2 = response.data.wind.speed;
+
     console.log(response.data)
 
     dateTime.innerHTML = formatDate(date)
@@ -15,7 +17,7 @@ function updatetemp(response) {
     windSpeed.innerHTML = `${output2}km/h`;
     cityElement.innerHTML = response.data.city;
     description.innerHTML = response.data.condition.description;
-
+    icon.innerHTML = `<img src="${response.data.condition.icon_url}" class="temp-emoji" />`;
     temperatures.innerHTML = Math.round(response.data.temperature.current);
 
     // time

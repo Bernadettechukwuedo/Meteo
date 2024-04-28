@@ -20,16 +20,15 @@ a{
 }
 .weather-temp{
     display:flex;
-    justify-content: center;;
+    
 }
 .temp-detail{
-    font-size:88px;
-    font-weight: bold;
-}
+    font-size: 88px;
+    line-height: 88px;
+    font-weight: bold;}
 .temp-emoji{
-    font-size:44px;
-    margin-top: 30px;
-    margin-left: 10px;
+    width: 88px;
+    height: 88px;
 }
 .temp-unit{
 margin-top:16px;
